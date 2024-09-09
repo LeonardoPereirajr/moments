@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MomentFormComponent } from './moment-form.component';
+import { CommonModule } from '@angular/common';
 
 describe('MomentFormComponent', () => {
   let component: MomentFormComponent;
@@ -8,7 +9,7 @@ describe('MomentFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MomentFormComponent]
+      imports: [MomentFormComponent, CommonModule]
     })
     .compileComponents();
 
